@@ -1,0 +1,293 @@
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --orange: #ffa500;
+    --black: #424242;
+    --dark-blue: #0052b4;
+    --blue: rgb(81, 81, 250);
+    --off-white: #eeeeee;
+}
+#root{
+    max-width: 1280px;
+    margin: auto auto;
+    text-align: center;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: .8rem;
+}
+
+.nav{
+    position: relative;
+    margin: 0 auto;
+    padding: 12px 0;
+}
+
+.nav-box, .nav_1, .nav_2{
+    display: flex;
+    align-items: center;
+}
+
+.nav_1, .nav_2{
+    justify-content: space-around;
+}
+
+.nav_1{
+    margin-right: auto;
+}
+
+.nav_1 *{
+    margin-right: 2rem;
+}
+.nav_2 *:not(:last-child){
+    margin-right: 1rem;
+}
+.navLink{
+    color: var(--black);
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.navLink:active, .navLink:hover{
+    color: var(--orange);
+    border-bottom: 2px var(--orange) solid;
+}
+
+.cta{
+    height: 45px;
+    padding: 10px 10px;
+    border: none;
+    background-color: var(--orange);
+    color: white;
+    border-radius: 25px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+/* HERO SECTION */
+
+.hero-section{
+    padding: 50px 0;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(-90deg, var(--orange) 0 40%, #ffffff 40% 100%);
+    padding: 50px 50px 40px 0;
+}
+
+.hero-text{
+    text-align: left;
+    margin-right: auto;
+}
+
+.hero-text h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 25px;
+}
+
+.hero-text .p{
+    line-height: 1.5rem;
+    margin-bottom: 25px;
+    max-width: 75%;
+}
+
+.hero-cta{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-cta *{
+    margin-right: 15px;
+}
+
+
+
+
+
+/* SERVICES */
+.service-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--blue);
+    padding: 25px;
+}
+
+.service{
+    display: flex;
+    align-items: center;
+}
+
+.service-icon{
+    margin-right: 10px;
+    border: none;
+    border-radius: 100%;
+    padding: 15px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.service-name{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+
+
+/* PRODUCT */
+.product{
+    display: flex;
+    gap: 60px;
+    background-color: var(--off-white);
+    padding: 50px 0;
+}
+
+.product-text, .news-text{
+    text-align: left;  
+}
+
+.product-header{
+    max-width: 80%;
+
+
+}
+
+.product-header h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--orange);
+    margin-bottom: 25px;  
+}
+
+.product-text .p{
+    line-height: 2rem;
+    margin-bottom: 25px;
+}
+
+.product_listing{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 75px;
+}
+
+.listing{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+
+.product-icon{
+    border-radius: 100%;
+    padding: 15px;
+    height: 40px; width: 40px;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-desc{
+    color: var(--blue);
+}
+
+
+
+
+
+
+/* NEWS */
+
+.news{
+    display: flex;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.news-header h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--blue);
+    margin-bottom: 20px; 
+}
+
+.news-text > .cta, .news-box > .cta{
+    height: 25px;
+    padding: 5px 10px;
+    margin-bottom: 25px;
+
+}
+
+.news-text .p p, .news-box .p p{
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.more-news{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.news-box > *:not(:nth-child(2)){
+    margin-bottom: 20px;
+}
+
+.news-box{
+    text-align: left;
+}
+
+.news-box > .news-header h1{
+    font-size: 1.5rem;
+}
+
+
+
+
+/* FOOTER */
+footer{
+    background-color: var(--black);
+    padding: 50px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px 0;
+    text-align: left;
+    color: #ffffff;
+}
+
+.footer-links{
+    list-style-type: none;
+    line-height: 4rem;
+    color: #ffffff;
+}
+
+

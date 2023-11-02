@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="bizedege corporate website">
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles/app.css">
+  <title>{{ .Title }}</title>
+</head>
+<body>
+<div id="root">
+
+  <header>
+    <div id="top">Welcome hugo</div>
+    <nav class="nav">
+      <div class="nav-box">
+        <div class="nav_1">
+          <div><img src="assets/icons/logo_1.png" alt="logo"></div>
+          <a class="navLink" href="#top">HOME</a>
+          <a class="navLink" href="#">NEWS</a>
+          <a class="navLink" href="#">ABOUT</a>
+          <a class="navLink" href="#">PRODUCT</a>
+          <a class="navLink" href="#">CONTACT US</a>
+        </div>
+        <div class="nav_2">
+          <div><img src="assets/icons/search.png" alt="search"></div>
+          <div><img src="assets/icons/v_line.png" alt="divider"></div>
+          <div><img src="assets/icons/cart.png" alt="" srcset=""></div>
+          <div><img src="assets/icons/v_line.png" alt="divider"></div>
+          <div><button class="cta" type="button">BE OUR PARTNER</button></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <section class="hero">
+    <div class="hero-text">
+      <h1>Lorem Ipsum <br/> dolor sit amet</h1>
+      <div class="p">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend nisi in ante accumsan interdum. Pellentesque consequat est nisl, non vehicula erat cursus vitae. Nam tempus, diam id vehicula dapibus,</p>
+        <div class="hero-cta">
+          <button class="cta">CONTACT NOW</button>
+          <span>Book a Demo</span>
+        </div>
+      </div>
+      </div>
+    <div class="hero-img">
+      <img class="hero-pic" src="assets/images/hero.jpg" alt="">
+    </div>
+    </section>
+  </section>
+
+  <section class="service-box">
+    <div class="service">
+        <div class="service-icon"><img src="assets/icons/service_1.png" alt="service_1"></div>
+        <h1 class="service-name">Service A</h1>
+    </div>
+    <div class="service">
+        <div class="service-icon"><img src="assets/icons/service_2.png" alt="service_2"></div>
+        <h1 class="service-name">Service B</h1>
+    </div>
+    <div class="service">
+        <div class="service-icon"><img src="assets/icons/service_3.png" alt="service_3"></div>
+        <h1 class="service-name">Service C</h1>
+    </div>
+  </section>
+
+  <section class="product">
+    <div class="product-img">
+        <img src="assets/images/city.jpg" alt="vision">
+    </div>
+    <div class="product-text">
+        <div class="product-header"><h1>Duis eleifend nisi in ante accumsan interdum.</h1></div>
+        <div class="p"><p>Nam condimentum ultricies enim, sed elementum magna varius quis. Praesent mollis cursus diam vehicula venenatis. Proin fringilla tortor in magna cursus euismod. Phasellus elit ligula, accumsan eget malesuada eget, tincidunt quis massa. Cras feugiat ultricies ante. Nulla eget nulla vel nunc imperdiet euismod.</p></div>
+        <div class="product_listing">
+            <div>
+                <div class="listing">
+                    <div class="product-icon"><img src="assets/icons/service_4.png" alt="service_4"></div>
+                    <h3 class="product-desc">Integer consequat rutrum ante ut tincidunt.</h3>
+                </div>
+                <div class="listing">
+                    <div class="product-icon"><img src="assets/icons/service_5.png" alt="service_5"></div>
+                    <h3 class="product-desc">Maecenas vel aliquet dolor, vel cursus augue.</h3>
+                </div>
+            </div>
+            <button class="cta">CONTACT NOW</button>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <h1></h1>
+    <div>
+      <div></div>
+      <div></div>
+    </div>
+  </section>
+
+  <section class="latest-news">
+    <div></div>
+    <div class="news">
+        <div><img src="assets/images/news.jpg" alt="latest-news"></div>
+        <div class="news-text">
+            <button class="cta">CATEGORY</button>
+            <div class="news-header"><h1>Nunc accumsan porttitor neque eget pulvinar.</h1></div>
+            <div class="p">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae sem iaculis, varius eros sit amet, placerat turpis. Etiam faucibus, massa at tempus aliquam, dui mauris bibendum magna, at blandit turpis ipsum quis felis.    
+                </p>
+                <p>Donec elit neque, laoreet ut mauris a, lacinia porta sapien. Suspendisse consequat elit a ligula fringilla, at vehicula eros tincidunt. Aliquam scelerisque commodo imperdiet. Phasellus non pharetra elit.</p>
+                <p> Donec elit neque, laoreet ut mauris a, lacinia porta sapien. Suspendisse consequat.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="more-news">
+    <div class="news-box">
+        <div><img src="assets/images/news_3.jpg" alt="news"></div>
+        <button class="cta">CATEGORY</button>
+        <div class="news-header"><h1>Nunc accumsan porttitor neque eget pulvinar.</h1></div>
+        <div class="p"><p> Etiam facilisis interdum arcu vulputate cursus. Mauris fringilla eros quis mi imperdiet viverra. Donec rutrum nunc sit amet dolor scelerisque laoreet ut quis augue. In in commodo tellus, in blandit libero.</p></div>
+    </div>
+    <div class="news-box">
+        <div><img src="assets/images/news_1.jpg" alt="news"></div>
+        <button class="cta">CATEGORY</button>
+        <div class="news-header"><h1>Nunc accumsan porttitor neque eget pulvinar.</h1></div>
+        <div class="p"><p> Etiam facilisis interdum arcu vulputate cursus. Mauris fringilla eros quis mi imperdiet viverra. Donec rutrum nunc sit amet dolor scelerisque laoreet ut quis augue. In in commodo tellus, in blandit libero.</p></div>
+    </div>
+    <div class="news-box">
+        <div><img src="assets/images/news_2.jpg" alt="news"></div>
+        <button class="cta">CATEGORY</button>
+        <div class="news-header"><h1>Nunc accumsan porttitor neque eget pulvinar.</h1></div>
+        <div class="p"><p> Etiam facilisis interdum arcu vulputate cursus. Mauris fringilla eros quis mi imperdiet viverra. Donec rutrum nunc sit amet dolor scelerisque laoreet ut quis augue. In in commodo tellus, in blandit libero.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <!-- tbd -->
+  </section>
+
+  <footer>
+    <hr />
+    <div class="footer">
+        <div><img src="assets/icons/logo_2.png" alt="logo"></div>
+        <div>
+            <ul class="footer-links">
+                <li>ABOUT US</li>
+                <li>CONTACT US</li>
+                <li>HELP</li>
+                <li>PRIVACY POLICY</li>
+            </ul>
+        </div>
+        <div class="info-box">
+            <h3>Info</h3>
+            <div class="info">
+                <img src="" alt="">
+                <p>Address Line</p>
+            </div>
+            <div class="info">
+                <img src="" alt="">
+                <p>(+39)123-456-7890</p>
+            </div>
+            <h3>Social Media</h3>
+            <div class="socials">
+                <div><img src="" alt=""></div>
+                <div><img src="" alt=""></div>
+                <div><img src="" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <hr />
+  </footer>
+
+</div>
+</body>
+</html>
