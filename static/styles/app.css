@@ -1,4 +1,4 @@
-
+/* GLOBAL */
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -25,9 +25,39 @@ a{
     text-decoration: none;
 }
 
+a, button{
+    cursor: pointer;
+}
+
 p{
     font-size: .8rem;
+    color: var(--black);
 }
+
+
+
+
+/* TOP BAR */
+.top-bar{
+    display: flex;
+    align-items: center;
+    background-color: var(--blue);
+    padding: 5px;
+}
+
+.country{
+    margin-right: auto;
+}
+
+.signin a{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+
+
+/* NAVIGATION */
 
 .nav{
     position: relative;
@@ -115,10 +145,13 @@ p{
     margin-top: 25px;
     display: flex;
     align-items: center;
+    gap: 20px;
+    margin-right: auto;
 }
 
-.hero-cta *{
-    margin-right: 15px;
+.hero-action{
+    color: var(--blue);
+    font-weight: bold;
 }
 
 
@@ -266,13 +299,101 @@ p{
     font-size: 1.5rem;
 }
 
+.latest-news-header h1{
+    font-size: 2.5rem;
+    color: var(--orange);
+}
+.latest-news-header p{
+    font-size: 1rem;
+    padding-top: 10px;
+}
+
+.read-news{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 5px;
+}
+
+.read-more{
+    color: var(--orange);
+    font-size: .8rem;
+    text-decoration: underline;
+}
+
+.pagination{
+    padding: 40px 0 350px;    
+}
+
+
+
+
+
+/* COUNTDOWN */
+.countdown{
+    background-color: var(--black);
+    position: relative;
+    height: 80vh;
+    padding-bottom: 50px;
+}
+
+.countdown-banner{
+    position: absolute;
+    z-index: 10;
+    top: -50%;
+    left: 5%;
+    right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown-banner img{
+    width: 98%;
+    height: auto;
+}
+
+.timer img{
+    width: 75%;
+    height: auto;
+}
+
+.countdown-text{
+    top: 1;
+    left: 1;
+    right: 1;
+
+}
+
+.countdown-text h1{
+    font-size: 7.5rem;
+    font-weight: 900;
+    color: #ffffff;
+    padding: 0 0 25px 0;
+    text-shadow: 2px 2px 2px var(--black);
+
+}
+
+.timer, .countdown-text{
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer{
+    bottom: -25%;
+    left: 5%;
+    right: 5%;
+}
 
 
 
 /* FOOTER */
 footer{
     background-color: var(--black);
-    padding: 50px;
+    padding: 5px 50px 25px;
 }
 
 .footer{
@@ -287,7 +408,25 @@ footer{
 .footer-links{
     list-style-type: none;
     line-height: 4rem;
+}
+
+.footer-links a{
     color: #ffffff;
+}
+
+.info-box > *{
+    margin-bottom: 15px;
+}
+
+.info, .socials{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 15px;
+}
+
+.info > p{
+    color: var(--off-white);
 }
 
 

@@ -12,24 +12,32 @@
 <body>
 <div id="root">
 
-  <header>
-    <div id="top">Welcome hugo</div>
+  <header id="top">
+    <div class="top-bar">
+      <div class="country">
+        <a href="#language"><img src="assets/icons/country.png" alt="language"></a>
+      </div>
+      <div class="signin">
+        <a href="#signin">Sign In / Sign Up</a>
+        <a href="#signup"><img src="assets/icons/signin.png" alt="signIn"></a>
+      </div>
+    </div>
     <nav class="nav">
       <div class="nav-box">
         <div class="nav_1">
-          <div><img src="assets/icons/logo_1.png" alt="logo"></div>
+          <div><a href="#home"><img src="assets/icons/logo_1.png" alt="logo"></a></div>
           <a class="navLink" href="#top">HOME</a>
-          <a class="navLink" href="#">NEWS</a>
-          <a class="navLink" href="#">ABOUT</a>
-          <a class="navLink" href="#">PRODUCT</a>
-          <a class="navLink" href="#">CONTACT US</a>
+          <a class="navLink" href="#news">NEWS</a>
+          <a class="navLink" href="#about">ABOUT</a>
+          <a class="navLink" href="#feature">PRODUCT</a>
+          <a class="navLink" href="#contact">CONTACT US</a>
         </div>
         <div class="nav_2">
-          <div><img src="assets/icons/search.png" alt="search"></div>
+          <div><a href="#search"><img src="assets/icons/search.png" alt="search"></a></div>
           <div><img src="assets/icons/v_line.png" alt="divider"></div>
-          <div><img src="assets/icons/cart.png" alt="" srcset=""></div>
+          <div><a href="#cart"><img src="assets/icons/cart.png" alt=""></a></div>
           <div><img src="assets/icons/v_line.png" alt="divider"></div>
-          <div><button class="cta" type="button">BE OUR PARTNER</button></div>
+          <div><a href="#cta"><button class="cta" type="button">BE OUR PARTNER</button></a></div>
         </div>
       </div>
     </nav>
@@ -43,7 +51,8 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend nisi in ante accumsan interdum. Pellentesque consequat est nisl, non vehicula erat cursus vitae. Nam tempus, diam id vehicula dapibus,</p>
         <div class="hero-cta">
           <button class="cta">CONTACT NOW</button>
-          <span>Book a Demo</span>
+          <div><img src="assets/icons/cta.png" alt="cta"></div>
+          <span class="hero-action"><a href="#cta">Book a Demo</a></span>
         </div>
       </div>
       </div>
@@ -68,7 +77,7 @@
     </div>
   </section>
 
-  <section class="product">
+  <section class="product" id="feature">
     <div class="product-img">
         <img src="assets/images/city.jpg" alt="vision">
     </div>
@@ -79,14 +88,14 @@
             <div>
                 <div class="listing">
                     <div class="product-icon"><img src="assets/icons/service_4.png" alt="service_4"></div>
-                    <h3 class="product-desc">Integer consequat rutrum ante ut tincidunt.</h3>
+                    <h3 class="product-desc"><a href="#service">Integer consequat rutrum ante ut tincidunt.</a></h3>
                 </div>
                 <div class="listing">
                     <div class="product-icon"><img src="assets/icons/service_5.png" alt="service_5"></div>
-                    <h3 class="product-desc">Maecenas vel aliquet dolor, vel cursus augue.</h3>
+                    <h3 class="product-desc"><a href="#service">Maecenas vel aliquet dolor, vel cursus augue.</a></h3>
                 </div>
             </div>
-            <button class="cta">CONTACT NOW</button>
+            <button class="cta">CALL TO ACTION  ></button>
         </div>
     </div>
   </section>
@@ -99,8 +108,11 @@
     </div>
   </section>
 
-  <section class="latest-news">
-    <div></div>
+  <section class="latest-news" id="news">
+    <div class="latest-news-header">
+      <h1>Latest News</h1>
+      <p>Lorem Ipsum dolor sit amet.</p>
+    </div>
     <div class="news">
         <div><img src="assets/images/news.jpg" alt="latest-news"></div>
         <div class="news-text">
@@ -112,6 +124,10 @@
                 <p>Donec elit neque, laoreet ut mauris a, lacinia porta sapien. Suspendisse consequat elit a ligula fringilla, at vehicula eros tincidunt. Aliquam scelerisque commodo imperdiet. Phasellus non pharetra elit.</p>
                 <p> Donec elit neque, laoreet ut mauris a, lacinia porta sapien. Suspendisse consequat.</p>
             </div>
+            <div class="read-news">
+              <a href="more" class="read-more">READ MORE</a>
+              <div><img src="assets/icons/more.png" alt="read-more"></div>
+            </div>
         </div>
     </div>
   </section>
@@ -122,52 +138,78 @@
         <button class="cta">CATEGORY</button>
         <div class="news-header"><h1>Nunc accumsan porttitor neque eget pulvinar.</h1></div>
         <div class="p"><p> Etiam facilisis interdum arcu vulputate cursus. Mauris fringilla eros quis mi imperdiet viverra. Donec rutrum nunc sit amet dolor scelerisque laoreet ut quis augue. In in commodo tellus, in blandit libero.</p></div>
+        <div class="read-news">
+          <a href="more" class="read-more">READ MORE</a>
+          <div><img src="assets/icons/more.png" alt="read-more"></div>
+        </div>
     </div>
     <div class="news-box">
         <div><img src="assets/images/news_1.jpg" alt="news"></div>
         <button class="cta">CATEGORY</button>
         <div class="news-header"><h1>Nunc accumsan porttitor neque eget pulvinar.</h1></div>
         <div class="p"><p> Etiam facilisis interdum arcu vulputate cursus. Mauris fringilla eros quis mi imperdiet viverra. Donec rutrum nunc sit amet dolor scelerisque laoreet ut quis augue. In in commodo tellus, in blandit libero.</p></div>
+        <div class="read-news">
+          <a href="more" class="read-more">READ MORE</a>
+          <div><img src="assets/icons/more.png" alt="read-more"></div>
+        </div>
     </div>
     <div class="news-box">
         <div><img src="assets/images/news_2.jpg" alt="news"></div>
         <button class="cta">CATEGORY</button>
         <div class="news-header"><h1>Nunc accumsan porttitor neque eget pulvinar.</h1></div>
         <div class="p"><p> Etiam facilisis interdum arcu vulputate cursus. Mauris fringilla eros quis mi imperdiet viverra. Donec rutrum nunc sit amet dolor scelerisque laoreet ut quis augue. In in commodo tellus, in blandit libero.</p></div>
+        <div class="read-news">
+          <a href="more" class="read-more">READ MORE</a>
+          <div><img src="assets/icons/more.png" alt="read-more"></div>
+        </div>
     </div>
   </section>
 
-  <section>
-    <!-- tbd -->
+  <section class="pagination">
+    <div>
+      <img src="assets/icons/pagination.png" alt="pagination">
+    </div>
+  </section>
+
+  <section class="countdown">
+    <div class="countdown-banner">
+      <img src="assets/images/banner.jpg" alt="countdown-banner">
+      <div class="countdown-text">
+        <h1>CAREER DAY COUNTDOWN</h1>
+      </div>
+      <div class="timer">
+        <img src="assets/icons/countdown.png" alt="timer">
+      </div>
+    </div>
   </section>
 
   <footer>
     <hr />
-    <div class="footer">
-        <div><img src="assets/icons/logo_2.png" alt="logo"></div>
+    <div class="footer" id="contact">
+        <div><a href="#top"><img src="assets/icons/logo_2.png" alt="logo"></a></div>
         <div>
             <ul class="footer-links">
-                <li>ABOUT US</li>
-                <li>CONTACT US</li>
-                <li>HELP</li>
-                <li>PRIVACY POLICY</li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+                <li><a href="#help">HELP</a></li>
+                <li><a href="#policy">PRIVACY POLICY</a></li>
             </ul>
         </div>
         <div class="info-box">
             <h3>Info</h3>
             <div class="info">
-                <img src="" alt="">
+                <img src="assets/icons/location.png" alt="address">
                 <p>Address Line</p>
             </div>
             <div class="info">
-                <img src="" alt="">
+                <img src="assets/icons/phone.png" alt="phone-contact">
                 <p>(+39)123-456-7890</p>
             </div>
             <h3>Social Media</h3>
             <div class="socials">
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
+                <div><a href="#linkedin"><img src="assets/icons/LinkedIn.png" alt="linkedin"></a></div>
+                <div><a href="#youtube"><img src="assets/icons/Youtube.png" alt="youtube"></a></div>
+                <div><a href="#instagram"><img src="assets/icons/Instagram.png" alt="instagram"></a></div>
             </div>
         </div>
     </div>
